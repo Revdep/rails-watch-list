@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root to: 'lists#index'
   resources :bookmarks, only: [:destroy]
   resources :lists do
-    resources :bookmarks, only: [:create, :new]
+    resources :bookmarks, only: [:create, :new , :show]
   end
 end
